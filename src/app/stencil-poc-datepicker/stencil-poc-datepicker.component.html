@@ -1,0 +1,20 @@
+<h1>Veera Datepicker component example</h1>
+
+<veera-datepicker #datepicker></veera-datepicker>
+
+<h1>Veera Datepicker component example usage with Angular Form</h1>
+
+<veera-datepicker #datepickerField></veera-datepicker>
+
+<br>
+
+<div [formGroup]="veeraDatepickerForm">
+
+  <div>
+    <label for="angularDatepickerField">Angular Form input:</label>
+
+    <input type="text" id="angularDatepickerField" [formControl]="datepickerFieldControl" />
+  </div>
+
+  Selected value: {{datepickerFieldControl.value}}
+</div>
